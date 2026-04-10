@@ -73,7 +73,7 @@ if st.button("✨ 코디 추천받기", type="primary", use_container_width=True
 
         with st.spinner("코디 추천 중... 👗"):
             try:
-                model = genai.GenerativeModel("gemini-1.5-pro")
+                model = genai.GenerativeModel("gemini-2.5-flash")
                 response = model.generate_content(prompt)
                 st.success("코디 추천 완료! 오늘도 멋진 하루 보내세요 😊")
                 st.markdown(response.text)
